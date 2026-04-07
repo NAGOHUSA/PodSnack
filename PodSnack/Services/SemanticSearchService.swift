@@ -109,7 +109,7 @@ final class SemanticSearchService {
 
     private func cosineSimilarity(_ a: [Double], _ b: [Double]) -> Double {
         guard a.count == b.count, !a.isEmpty else { return 0 }
-        let dot = zip(a, b).reduce(0) { $0 + $1.0 * $1.1 }
+        let dot = zip(a, b).reduce(0.0) { acc, pair in acc + pair.0 * pair.1 }
         let normA = sqrt(a.reduce(0) { $0 + $1 * $1 })
         let normB = sqrt(b.reduce(0) { $0 + $1 * $1 })
         guard normA > 0, normB > 0 else { return 0 }

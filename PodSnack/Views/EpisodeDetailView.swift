@@ -102,7 +102,7 @@ struct EpisodeDetailView: View {
         HStack(spacing: 8) {
             ProgressView()
                 .scaleEffect(0.8)
-            Text("Transcribing & summarising on-device…")
+            Text("Transcribing & summarizing on-device…")
                 .font(.caption)
                 .foregroundStyle(.secondary)
         }
@@ -216,7 +216,7 @@ struct EpisodeDetailView: View {
                 .foregroundStyle(.secondary)
             Text("Summary Not Ready")
                 .font(.headline)
-            Text("Tap **Process** in the top right to transcribe\nand summarise this episode on-device.")
+            Text("Tap **Process** in the top right to transcribe\nand summarize this episode on-device.")
                 .multilineTextAlignment(.center)
                 .foregroundStyle(.secondary)
                 .font(.subheadline)

@@ -2,7 +2,7 @@ import Foundation
 import SwiftData
 
 /// Central coordinator that processes new episodes:
-/// fetch → transcribe → summarize → highlight → notify.
+/// transcribe → summarize → extract highlights → notify.
 @MainActor
 final class PodcastRepository: ObservableObject {
 

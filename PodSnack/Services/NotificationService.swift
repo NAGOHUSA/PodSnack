@@ -2,7 +2,7 @@ import Foundation
 import UserNotifications
 
 /// Sends high-priority Smart Alert notifications when a user-defined
-/// keyword is detected in a freshly summarised episode.
+/// keyword is detected in a freshly summarized episode.
 @MainActor
 final class NotificationService: ObservableObject {
 

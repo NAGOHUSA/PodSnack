@@ -284,7 +284,7 @@ struct EpisodeListRow: View {
                 Label(formattedDuration(episode.duration), systemImage: "clock")
                 if episode.isSummarized {
                     Text("·")
-                    Label("Summarised", systemImage: "checkmark.circle.fill")
+                    Label("Summarized", systemImage: "checkmark.circle.fill")
                         .foregroundStyle(.green)
                 }
             }

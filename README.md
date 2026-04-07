@@ -12,7 +12,7 @@ PodSnack ("The Morning Brief") transforms your podcast subscriptions from a wall
 | Feature | Apple Framework Used |
 |---|---|
 | On-device transcription | `Speech` (SFSpeechRecognizer) |
-| AI summarisation | `NaturalLanguage` (extractive) + Writing Tools API |
+| AI summarization | `NaturalLanguage` (extractive) + Writing Tools API |
 | Semantic search | `NLEmbedding` (word vectors) |
 | Smart Alert notifications | `UserNotifications` |
 | Data persistence | `SwiftData` |
@@ -59,13 +59,13 @@ PodSnack/
 │   │   └── Episode.swift          # @Model: Episode + Transcript/Summary/Highlight value types
 │   ├── Services/
 │   │   ├── TranscriptionService.swift    # On-device SFSpeechRecognizer transcription
-│   │   ├── SummarizationService.swift    # NL-based extractive summarisation + keyword matching
+│   │   ├── SummarizationService.swift    # NL-based extractive summarization + keyword matching
 │   │   ├── NotificationService.swift     # Smart Alert UNUserNotificationCenter integration
 │   │   ├── PodcastFeedService.swift      # RSS 2.0 feed parser (XMLParserDelegate)
 │   │   ├── SemanticSearchService.swift   # NLEmbedding cosine-similarity search
 │   │   └── HighlightService.swift        # 30-second highlight extraction
 │   ├── Repository/
-│   │   └── PodcastRepository.swift       # Central coordinator: fetch → transcribe → summarise → notify
+│   │   └── PodcastRepository.swift       # Central coordinator: fetch → transcribe → summarize → notify
 │   └── Views/
 │       ├── MorningBriefView.swift         # Daily feed (newspaper style)
 │       ├── SkimView.swift                 # Full-screen swipeable highlights
